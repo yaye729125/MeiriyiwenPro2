@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        tools:context="net.gyapp.meiriyiwenpro2.MainActivity"
+        android:orientation="vertical"
+
+>
+    <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="#ff0000"-->
+    <!--&gt;-->
+
+        <!--<Button android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="share"-->
+                <!--android:onClick="onShare"-->
+
+        <!--/>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="outsideOverlay"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+        <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+        <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+
+        <TextView
+                android:id="@+id/htmlTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:clickable="true"
+                android:textSize="16.5sp"
+                android:onClick="onHtmlClick"
+                android:lineSpacingMultiplier="1.2"
+        />
+    </ScrollView>
+</LinearLayout>
